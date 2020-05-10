@@ -140,8 +140,9 @@ class Cop(Agent):
                     agent.condition == 'Active' and \
                     agent.jail_sentence == 0:
                 active_neighbors.append(agent)
-        if active_neighbors:
-            arrestee = self.random.choice(active_neighbors)
+        if
+        for active_neighbor in active_neighbors:
+            arrestee = active_neighbor
             sentence = self.random.randint(0, self.model.max_jail_term)
             arrestee.jail_sentence = sentence
         if self.model.movement and self.empty_neighbors:
